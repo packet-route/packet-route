@@ -3,7 +3,7 @@ layout: post
 title: "Why our AI could hardly detect healthy big leaves being healthy plants"
 date: 2026-05-29
 class: "2025-2026"
-excerpt: "A Teachable Machine case study on why the model struggled."
+authors: "Rafael Leite and Lucas Amorim"
 categories: ["Big Idea 5 - Impact of Computing"]
 tags: ["Teachable Machine"]
 ---
