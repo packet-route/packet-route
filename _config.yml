@@ -1,7 +1,7 @@
 title: Packet Route
 description: AP CSP student blog
 baseurl: "/packet-route"
-url: "https://packet-route.github.io/packet-route/"
+url: "https://[your-username].github.io"
 
 theme: minima
 
@@ -10,6 +10,16 @@ plugins:
 
 permalink: /posts/:title/
 
+header_pages:
+  - essentials.md
+  - packet-feed.md
+  - innovations.md
+
+collections:
+  innovations:
+    output: true
+    permalink: /innovations/:name/
+
 defaults:
   - scope:
       path: ""
@@ -17,3 +27,8 @@ defaults:
     values:
       layout: "post"
       author: "AP CSP Class"
+  - scope:
+      path: ""
+      type: "innovations"
+    values:
+      layout: "post"
