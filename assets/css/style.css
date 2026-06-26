@@ -1,0 +1,29 @@
+:root {
+  --bg: #faf9f6;
+  --text: #1a1a1a;
+  --brand: #1a5276;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Lora", serif;
+}
+
+.site-header, .page-content, .site-footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.site-nav a {
+  margin-right: 1em;
+  color: var(--brand);
+  text-decoration: none;
+}
