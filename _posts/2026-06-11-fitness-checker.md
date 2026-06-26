@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Did We Accidentally Break Our Squat Checking AI? What we Learned from Training a Teachable Machine model"
-date: 2025-MM-DD
+date: 2026-06-11
 class: "2025-2026"
 author: "Juliana Pires, Mateus D'Avila and Arthur Figueiredo"
 categories: ["Big Idea 5 - Impact of Computing"]
