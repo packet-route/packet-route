@@ -1,20 +1,19 @@
----
-layout: page
-title: Packet Feed
-permalink: /packet-feed/
----
-
 Student-created artifacts, archived by class year.
 
 {% assign posts_by_class = site.posts | group_by: "class" %}
 {% for year in posts_by_class %}
 ## Class {{ year.name }}
-<ul>
+
 {% for post in year.items %}
-  <li>
+<article style="margin-bottom: 1.5em;">
+  <h3 style="margin-bottom: 0.2em;">
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    {% if post.tags %}<em>({{ post.tags | join: ", " }})</em>{% endif %}
-  </li>
+  </h3>
+  <p style="color: #666; font-size: 0.9em; margin: 0;">
+    {{ post.date | date: "%d/%m/%Y" }}
+    {% if post.tags %} &middot; {{ post.tags | join: ", " }}{% endif %}
+  </p>
+  {% if post.excerpt %}<p>{{ post.excerpt }}</p>{% endif %}
+</article>
 {% endfor %}
-</ul>
 {% endfor %}
