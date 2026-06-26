@@ -5,7 +5,7 @@ date: 2025-06-09
 class: "2025-2026"
 author: "Arthur Viveiros and Rafael Fonseca"
 categories: ["Big Idea 5 - Impact of Computing"]
-tags: [""]
+tags: ["Teachable Machine"]
 ---
 
 Do you think deciding if a posture is good or bad is easy? For our AI, it isn’t. It can’t be 100% sure until an extremely good or extremely bad posture is shown. Depending on what is shown to our AI, it can be difficult to analyze; however, for a human, it may not be that hard. 
