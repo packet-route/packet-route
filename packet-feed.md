@@ -13,7 +13,7 @@ Student-created artifacts, archived by class year.
     {{ post.date | date: "%d/%m/%Y" }}
     {% if post.tags %} &middot; {{ post.tags | join: ", " }}{% endif %}
   </p>
-  {% if post.excerpt %}<p>{{ post.excerpt }}</p>{% endif %}
+  {% if post.author %}<p>{{ post.author }}</p>{% endif %}
 </article>
 {% endfor %}
 {% endfor %}
