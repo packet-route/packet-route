@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Why Our AI Said We Should Accelerate at a Red Light"
+date: 2025-06-09
+class: "2025-2026"
+author: "Alexandre Lima and Rafael Nedungadi"
+categories: ["Big Idea 5 - Impact of Computing"]
+tags: ["Teachable Machine"]
+---
+
+You would think it would be very easy to differentiate between traffic lights, but for our AI, it is not. It gets very uncertain whether to stop or accelerate. However, in the majority of cases, it decides to accelerate, only stopping if it is a very obvious red light, posing a severe danger to pedestrians.
+
+We trained our Teachable Machine model on three classes: “GO,” “CAUTION,” and “STOP!” We collected around 70 images, with at least 20 for each section. The “GO” section contained objects and signs that would make the AI accelerate the car, “CAUTION” would make the AI go slower, and “STOP!” would make the AI stop.
+
+This AI is supposed to interpret all signals in traffic, but it can’t. Even after countless tests and multiple image examples, the AI still makes mistakes. It remains uncertain about some images because certain criteria must be met for the AI to give an accurate classification:
+
+* **Framing/Covering:** If the image does not completely occupy the webcam view, the AI makes assumptions based on both the foreground image and the background environment.
+* **Lighting:** Image quality is a major factor, especially regarding lighting. Too much or too little light causes entirely different outputs.
+* **Quality:** Naturally, if the image quality is poor, the AI resorts to making a random guess.
+
+Overall, for our AI to work properly, more fine-tuning is needed, such as adding more images or more specific colors, so it can reliably help drivers understand what they should do on the road.
