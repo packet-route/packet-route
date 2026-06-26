@@ -1,0 +1,19 @@
+title: Packet Route
+description: AP CSP student blog
+baseurl: "/packet-route"
+url: "https://packet-route.github.io/packet-route/"
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+
+permalink: /posts/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "AP CSP Class"
