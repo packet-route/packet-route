@@ -3,8 +3,6 @@ description: AP CSP student blog
 baseurl: "/packet-route"
 url: "https://[your-username].github.io"
 
-theme: minima
-
 plugins:
   - jekyll-feed
 
