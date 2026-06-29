@@ -17,3 +17,13 @@ Why did such a problem occur? This type of problem happens because AI models req
 Moreover, even if an actual arm or leg X-ray were inputted and given more data training, the program could still fail. This is caused by the fact that perfect, identical conditions do not exist, so the model could still get confused if there is a slight change in position or lighting.
 
 Nevertheless, the program would definitely present better outputs after undergoing diverse tests and with the input of more image samples. For this reason, AI models are still good and can be extremely useful, saving a lot of time and preventing unnecessary work. Furthermore, the time taken by a doctor to analyze an X-ray could be drastically reduced with the help of an AI program, especially because the doctor would have the knowledge required to check if the model’s answer is correct, ensuring that the patient receives the best treatment.
+
+## Try it
+
+<div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+  <iframe
+    src="/packet-route/models/x-ray-ai/"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    frameborder="0">
+  </iframe>
+</div>
