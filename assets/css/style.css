@@ -89,6 +89,13 @@ hr {
   gap: 2rem;
   padding: 2rem 3rem;
   overflow: hidden;
+  max-width: none;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .home-wordmark {
