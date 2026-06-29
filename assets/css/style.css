@@ -160,7 +160,9 @@ hr {
     padding: 2rem 4rem;
     overflow:hidden;
   }
-  .home-wordmark { max-width: 100%; }
+  .home-wordmark { 
+    max-width: 50%; 
+  }
   .home-links {
     align-items: flex-start;
     text-align: left;
