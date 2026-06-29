@@ -1,29 +1,81 @@
 :root {
-  --bg: #faf9f6;
+  /* Bauhaus palette */
+  --bg: #ffffff;
   --text: #1a1a1a;
-  --brand: #1a5276;
+  --red: #ef4136;
+  --blue: #2b82c9;
+  --yellow: #ffd95a;
+
+  /* role assignments */
+  --link: var(--blue);
+  --link-hover: var(--red);
+  --accent-block: var(--yellow);
+
+  /* type families */
+  --font-title: "Arvo", serif;
+  --font-subtitle: "Merriweather", serif;
+  --font-body: "Inika", serif;
+
+  /* layout */
+  --measure: 680px;
 }
+
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
   background-color: var(--bg);
   color: var(--text);
-  font-family: "Inter", sans-serif;
-  line-height: 1.6;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
+/* Headings: Arvo, the slab serif, carries the title tier */
 h1, h2, h3 {
-  font-family: "Lora", serif;
+  font-family: var(--font-title);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+  margin: 1.6em 0 0.5em;
 }
 
-.site-header, .page-content, .site-footer {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 1.5em;
+h1 { font-size: 2.6rem; margin-top: 0; }
+h2 { font-size: 1.9rem; }
+h3 { font-size: 1.4rem; }
+
+/* Subtitle tier: Merriweather. Use a .subtitle class on the
+   element you want in the middle voice (post excerpt, section lead). */
+.subtitle {
+  font-family: var(--font-subtitle);
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 1.4;
+  color: #444;
+  margin: 0.4em 0 1.2em;
 }
 
-.site-nav a {
-  margin-right: 1em;
-  color: var(--brand);
+p { margin: 0 0 1.2em; }
+
+a {
+  color: var(--link);
   text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+a:hover { color: var(--link-hover); }
+
+/* content column */
+.page-content {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2em 1.5em 4em;
+}
+
+/* a reusable accent rule using the red, for section dividers */
+hr {
+  border: none;
+  border-top: 3px solid var(--red);
+  width: 60px;
+  margin: 2.5em 0;
 }
