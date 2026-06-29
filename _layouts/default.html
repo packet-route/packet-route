@@ -7,13 +7,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Merriweather:wght@400;700&family=Inika:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
+    {% unless page.hide_header %}
     <header class="site-header">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <nav class="site-nav">
@@ -23,6 +22,7 @@
         {% endfor %}
       </nav>
     </header>
+    {% endunless %}
 
     <main class="page-content">
       {{ content }}
